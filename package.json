@@ -1,0 +1,18 @@
+{
+  "name": "ls-equipment-site",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "upload:dev": "aws s3 sync ./www s3://ls-equipment-site/ --delete --cache-control no-cache",
+    "upload:prod:assets": "aws s3 sync ./www s3://ls-equipment-site/ --delete --exclude *.html --cache-control max-age=31536000",
+    "upload:prod:html": "aws s3 sync ./www s3://ls-equipment-site/ --delete --exclude * --include *.html --cache-control no-cache",
+    "upload:prod": "npm run upload:prod:assets && npm run upload:prod:html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gridwork-Digital/lsequipment.git"
+  },
+  "author": "",
+  "license": "Private",
+  "private": true
+}

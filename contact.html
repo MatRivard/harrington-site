@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LS Equipment - Contact Us</title>
+    <meta name="description" content="Contact LS Equipment today.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./assets/placeholder-logo-cropped.jpg">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat">
+    <script type="text/javascript">
+      function submitForm(that) {
+        event.preventDefault();
+
+        fetch(' https://binrxylej0.execute-api.us-east-1.amazonaws.com/prod/contact-form', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: that.name.value,
+            phone: that.phone.value,
+            email: that.email.value,
+            message: that.message.value
+          })
+        }).then(
+        res => {
+          const thanksEl = document.getElementById("submit-thanks");
+          thanksEl.style.display = "block";
+        });
+
+        that.reset();
+      }
+    </script>
+  </head>
+
+
+  <body class="page--about">
+    <div id="nav-menu-mobile">
+      <ion-icon name="close" id="mobile-menu-close" onclick="closeMobileMenu()"></ion-icon>
+      <a href="/">Home</a>
+      <a href="./about-us.html">About Us</a>
+      <a href="./services.html">Services</a>
+      <a href="./brands.html">Brands</a>
+      <a href="./contact.html">Contact Us</a>
+      <div class="social">
+        <a href="https://www.facebook.com/lsequipmentandservices/" rel="external" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/lsequipmentservices/" rel="external" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <nav class="main--nav">
+      <ion-icon name="menu" class="mobile-menu-btn" onclick="openMobileMenu()"></ion-icon>
+      <div class="inner-content">
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/placeholder-logo-cropped.jpg">
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="./about-us.html">About Us</a>
+          <a href="./services.html">Services</a>
+          <a href="./brands.html">Brands</a>
+          <a href="./contact.html">Contact Us</a>
+          <div class="social">
+            <a href="https://www.facebook.com/lsequipmentandservices/" rel="external" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/lsequipmentservices/" rel="external" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <div class="content-section-outer">
+        <div class="content-section-inner">
+          <h1>CONTACT US</h1>
+          <p>Get in touch with us today for any question about the products we carry or if you would like to speak to one of our team members about maintenance or repairs.</p>
+
+          <div class="contact-form">
+            <h3 align="center">GET IN TOUCH</h3>
+            <p>Please fill out the information below in order to contact the LS Equipment team.</>
+            <form id="contact-form" onsubmit="submitForm(this)">
+              <label for="name">Name*</label><br>
+              <input type="text" id="name" name="name" required><br>
+              <label for="email">Email*</label><br>
+              <input type="email" id="email" name="email" required><br>
+              <label for="phone">Phone Number</label><br>
+              <input type="tel" id="phone" name="phone"><br>
+              <label for="message">Message*</label><br>
+              <textarea type="text" id="message" name="message" rows="6" cols="50" required></textarea><br>
+              <p><small>* Fields marked by an asterisk are required.</small></p>
+              <div class="submit">
+                <button type="submit" class="button" id="submit-btn">Submit</button>
+              </div>
+              <p id="submit-thanks">Thank you for your inquiry! We'll be in touch soon.</p>
+            </form> 
+          </div>
+
+          <div class="locations">
+            <h2>Locations</h2>
+            <p>View our locations below.</p>
+            <div class="location">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.69493570941!2d-79.67617850313098!3d47.614107690490734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d267d91315a4f19%3A0xa69f924d7d60b064!2sLS%20Equipment%20And%20Services%20LTD.!5e0!3m2!1sen!2sca!4v1604510315501!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="location-info">
+                <h2>NEW LISKEARD BRANCH</h2>
+                <p>
+                  999377 Highway 11 North,
+                  <br>ON, P0J 1P0
+                  <br>
+                  <br><strong>Phone:</strong> <a href="tel:+17052733400">(705) 273-3400</a>
+                </p>
+              </div>
+            </div>
+            <div class="location">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10576.202503715052!2d-81.1718226!3d48.4939212!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a20d83174b2fd15!2sLS%20Equipment%20And%20Services%20LTD.!5e0!3m2!1sen!2sca!4v1604461731335!5m2!1sen!2sca" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="location-info">
+                <h2>PORCUPINE BRANCH</h2>
+                <p>
+                  5833 King St, Porcupine,
+                  <br>ON, P0N 1C0
+                  <br>
+                  <br><strong>Phone:</strong> <a href="tel:+17052733400">(705) 273-3400</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-inner">
+        <div class="logo">
+          <img src="./assets/placeholder-logo-cropped.jpg">
+        </div>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="./services.html">Services</a>
+          <a href="./brands.html">Brands</a>
+          <a href="./about-us.html">About Us</a>
+          <a href="./contact.html">Contact Us</a>
+        </div>
+        <div class="social">
+          <a  href="https://www.facebook.com/lsequipmentandservices/" rel="external" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a  href="https://www.instagram.com/lsequipmentservices/" rel="external" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="ion-text-center">
+          &#169; LS Equipment 2021
+          <br> Website created by <a href="https://www.gridworkdigital.com/" target="_blank" rel="external"> Gridwork Digital</a>
+        </p>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  </body>
+</html>
