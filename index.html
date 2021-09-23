@@ -2,12 +2,11 @@
 <html>
   <head>
     <title>Harrington Lab - Home</title>
-    <meta name="description" content="LS Equipment is a full-service mechanical company in the heavy equipment industry based in northern Ontario.">
+    <meta name="description" content="The Harrington lab is a research group focused on bio-inspired materials processing at McGill University, in Montreal, Canada.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="./main.js"></script>
     <link rel="icon" type="image/jpg" href="./assets/cropped-black-text-nobg.png">
     <link rel="stylesheet" type="text/css" href="./main.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Dosis">
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
@@ -19,10 +18,12 @@
     <div id="nav-menu-mobile">
       <ion-icon name="close" id="mobile-menu-close" onclick="closeMobileMenu()"></ion-icon>
       <a href="./index.html">Home</a>
-      <a href="./about-us.html">About Us</a>
-      <a href="./services.html">Services</a>
-      <a href="./brands.html">Brands</a>
-      <a href="./contact.html">Contact Us</a>
+      <a href="./about-us.html">Group</a>
+      <a href="./lab.html">The Lab</a>
+      <a href="./research.html">Research</a>
+      <a href="./publications.html">Publications</a>
+      <a href="./contact.html">Open Positions</a>
+      <a href="./contact.html">Prof. Harrington</a>
     </div>
     <nav class="main--nav">
       <ion-icon name="menu" class="mobile-menu-btn" onclick="openMobileMenu()"></ion-icon>
@@ -33,11 +34,13 @@
           </a>
         </div>
         <div class="nav-links">
-          <a href="./index.html" class="active">Home</a>
-          <a href="./about-us.html">About Us</a>
-          <a href="./services.html">Services</a>
-          <a href="./brands.html">Brands</a>
-          <a href="./contact.html">Contact Us</a>
+          <a href="./index.html" class="navlink">Home</a>
+          <a href="./about-us.html" class="navlink">Group</a>
+          <a href="./lab.html" class="navlink">The Lab</a>
+          <a href="./research.html" class="navlink">Research</a>
+          <a href="./publications.html" class="navlink">Publications</a>
+          <a href="./contact.html" class="navlink">Open Positions</a>
+          <a href="./prof-harrington.html" class="navlink">Prof. Harrington</a>
         </div>
       </div>
     </nav>
@@ -46,19 +49,29 @@
       <div class="banner-section">
         <div class="swiper">
           <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url('./assets/placeholder-slide-3.jpg');">
+                <div class="text-content">
+                  <h2>Flexible coatings from fluid phases</h2>
+                  <p>Mussels fabricate metal-reinforced polymer coatings to protect against abrasion at the seashore. We utilized advance imaging techniques to investigate the assembly of the coatings from preorganized biphasic fluid protein phases. Our findings are relevant for efforts to design nanostructured materials and devices through self-assembly.</p>
+                  <a class="button" href="https://www.nature.com/articles/s41467-020-14709-y" target="_blank">Read More</a>
+                </div>
+              </div>
+
               <div class="swiper-slide" style="background-image: url('./assets/placeholder-slide-1.jpg');">
-                <!-- <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</div> -->
+                <div class="text-content">
+                  <h2>Liquid Crystals to Fibers</h2>
+                  <p>Mussels create self-healing fibers known as byssal threads from tiny protein vesicles, which rapidly self-assemble. The bright color indicates that proteins are liquid crystalline, meaning they have an ordered arrangement, but flow like a liquid. This pre-ordering helps achieve  high structural order necessary for material performance.</p>
+                  <a class="button" href="https://www.nature.com/articles/ncomms14539" target="_blank">Read More</a>
+                </div>
               </div>
 
               <div class="swiper-slide" style="background-image: url('./assets/placeholder-slide-2.png');">
-                <!-- <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</div> -->
-              </div>
-
-              <div class="swiper-slide" style="background-image: url('./assets/placeholder-slide-3.jpg');">
-                <!-- <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</div> -->
+                <div class="text-content">
+                  <h2>Stiff Fibers from Sticky Slime</h2>
+                  <p>The hunting slime of velvet worm transform into stiff polymeric fibers in mid-air. With our collaborators, we discovered mechanoresponsive protein-lipid nanoglobules in the slime, which are the key to this remarkable behavior. Fibers are fully recyclable, providing scientists with an excellent role model for circular materials processing.</p>
+                  <a class="button" href="https://www.nature.com/articles/s41467-017-01142-x" target="_blank">Read More</a>
+                  <a class="button" href="https://www.mpg.de/11550818/velvet-worms-recyclable-polymer" target="_blank">Press Release</a>
+                </div>
               </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -66,53 +79,43 @@
       </div>
 
       <div class="content-section-outer statement">
-        <div class="content-section-inner text-center">
-            <h1>COMPANY STATEMENT</h1>
-            <p>LS Equipment is a full-service mechanical company in the heavy equipment industry. LS offers troubleshooting services and all maintenance/repairs related to the industry both in the shop and in the field as we are equipped with mobile service units. LS Equipment also offers a wide variety of parts and unit sales within the industry.</p>
-            <a class="button" href="./about-us.html">Learn More</a>
+        <div class="content-section-inner">
+            <h1>OUR MISSION</h1>
+            <h3>Green Materials Production Inspired by Nature</h3>
+            <p>
+              Nature has something to teach humans about how to make better materials in a more sustainable way.
+              Our group wants to understand biological material processing and apply it to fabricate novel materials.</p>
+            <a class="button" href="./research.html">Learn More</a>
         </div>
       </div>
       <div class="content-section-outer services">
         <div class="content-section-inner flex">
-          <div class="flex content-icons">
-            <ion-icon name="cog-outline"></ion-icon>
-            <ion-icon name="build-outline"></ion-icon>
+          <div class="flex content-icons lab" style="background-image: url('./assets/lab-instruments/pp010.JPG');">
+            <!-- <img src="./assets/lab-instruments/pp010.JPG"> -->
           </div>
           <div class="content-text">
-            <h1>SERVICES</h1>
-            <p>LS Equipment offers an extensive selection of services, ranging from heavy equipment maintenance and repairs, customized maintenance programs to suit your needs, and parts sales both in-stock and by request. Click below to see our full list of services.</p>
-            <a class="button full" href="./services.html">Learn More About Our Services Here</a>
+            <h1>LAB FACILITIES</h1>
+            <p>The Harrington lab facilities are located in the basement of the Pulp &amp; Paper building on McGill university's campus in Montreal, Quebec. Learn more about the lab below.</p>
+            <a class="button full" href="./lab.html">View our lab here</a>
           </div>
         </div>
       </div>
       <div class="content-section-outer brands">
         <div class="content-section-inner flex">
           <div class="content-text">
-            <h1>BRANDS</h1>
-            <p>LS Equipment carries a wide variety of CMI, FAE, Log Max and Logset machinery, among others, to help you get the job done. We also provide parts from many leading brands to keep your equipment running smoothly. Explore our Brands page to see what we have to offer.</p>
-            <a class="button full" href="./brands.html">View Our Brands Here</a>
+            <h1>THE TEAM</h1>
+            <p>Looking to get in touch with one of our team members? Find a list of current and past students and postdocs below.</p>
+            <a class="button full" href="./about-us.html">View Our Current &amp; Past Members Here</a>
           </div>
-          <div class="flex content-icons">
-            <div class="img">
-              <img src="./assets/cmi-placeholder.png">
-            </div>
-            <div class="img">
-              <img src="./assets/fae-placeholder.png">
-            </div>
-            <div class="img">
-              <img src="./assets/log-max-placeholder.png">
-            </div>
-            <div class="img">
-              <img src="./assets/logset-placeholder.jpg">
-            </div>
+          <div class="flex content-icons team" style="background-image: url('./assets/group.jpg');">
           </div>
         </div>
       </div>
       <div class="content-section-outer contact text-center">
         <div class="content-section-inner">
-          <h1>CONTACT US</h1>
-          <p>Have questions about our services or products and would like to discuss further?</p>
-          <a class="button" href="./contact.html">Find Our Contact Information Here</a>
+          <h1>CURRENT POSITIONS</h1>
+          <p>Interested in joining the Harrington lab or collaborating with the group?</p>
+          <a class="button" href="./contact.html">View open positions here</a>
         </div>
       </div>
     </div>
@@ -122,27 +125,19 @@
         <div class="logo">
           <img src="./assets/cropped-white-text-nobg.png">
         </div>
-        <div class="nav-links">
-          <a href="/">Home</a>
-          <a href="./services.html">Services</a>
-          <a href="./brands.html">Brands</a>
-          <a href="./about-us.html">About Us</a>
-          <a href="./contact.html">Contact Us</a>
-        </div>
-        <div class="social">
-          <a  href="https://www.facebook.com/lsequipmentandservices/" rel="external" target="_blank">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-          <a  href="https://www.instagram.com/lsequipmentservices/" rel="external" target="_blank">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-        </div>
-      </div>
-      <div class="copyright">
-        <p class="ion-text-center">
-          &#169; LS Equipment 2021
-          <br> Website created by <a href="https://www.gridworkdigital.com/" target="_blank" rel="external"> Gridwork Digital</a>
-        </p>
+        <!-- <div class="nav-links">
+          <div>
+            <a href="./index.html">Home</a>
+            <a href="./about-us.html">Group</a>
+            <a href="./lab.html">The Lab</a>
+            <a href="./research.html">Research</a>
+          </div>
+          <div>
+            <a href="./publications.html">Publications</a>
+            <a href="./contact.html">Open Positions</a>
+            <a href="./prof-harrington.html">Prof. Harrington</a>
+          </div>
+        </div> -->
       </div>
     </div>
 
@@ -163,6 +158,7 @@
         }
       })
     </script>
+    <script type="text/javascript" src="./main.js"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
   </body>
 </html>

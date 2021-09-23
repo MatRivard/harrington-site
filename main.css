@@ -13,7 +13,7 @@ html, body {
 }
 
 html, body, ion-content {
-  font-family: 'Montserrat';
+  font-family: 'Dosis';
 }
 
 body {
@@ -48,8 +48,8 @@ body {
 }
 
 .button:hover {
-  background-color: #5C5F58;
-  color: white;
+  background-color: var(--main-blue);
+  color: white !important;
 }
 
 
@@ -96,7 +96,7 @@ nav {
 	box-shadow: 0 3px 2px -2px #5C5F58;
 	padding: 0;
   position: fixed;
-  z-index: 2;
+  z-index: 200;
   width: 100%;
   background: var(--main-blue);
 }
@@ -126,6 +126,7 @@ nav .nav-links {
 
 .nav-links a {
 	display: inline-block;
+  font-size: 14px;
 	padding: 5px 0 4px;
   margin: 0 10px;
 	color: white;
@@ -224,7 +225,7 @@ nav .nav-links a:hover {
 }
 
 .content-section-outer {
-  padding: 80px 30px;
+  padding: 120px 30px;
 }
 
 .content-section-inner {
@@ -244,11 +245,11 @@ nav .nav-links a:hover {
 
 .footer-inner {
   max-width: 900px;
-  height: 200px;
-  padding: 20px 30px;
+  height: 150px;
+  padding: 0px 30px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -256,10 +257,22 @@ nav .nav-links a:hover {
   height: 60px;
 }
 
-.footer-inner .nav-links a,
-.footer-inner ion-icon {
+.footer-inner .nav-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin-left: 100px;
+}
+
+.footer-inner .nav-links > div {
+  flex-grow: 1;
+}
+
+
+.footer-inner a {
   color: #ffffff;
   font-weight: normal;
+  display: block;
 }
 
 .copyright p {
@@ -285,11 +298,17 @@ nav .nav-links a:hover {
 	position: absolute;
   text-align: left;
 	bottom: 50px;
-	right: 0;
-	background: #ffffff;
+	left: 0;
+	background: rgba(255, 255, 255, 0.7);
   width: 400px;
 	max-width: 400px;
-	padding: 10px;
+	padding: 30px;
+}
+
+.page--home .swiper-slide .text-content h2,
+.page--home .swiper-slide .text-content p,
+.page--home .swiper-slide .text-content a {
+  color: black;
 }
 
 .page--home .swiper-container {
@@ -330,6 +349,22 @@ nav .nav-links a:hover {
 .page--home .content-icons {
   justify-content: center;
   align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.page--home .content-icons.lab {
+  margin-right: 20px;
+  box-shadow: 0 0 6px 6px #e0e0e0 inset;
+}
+
+.page--home .content-icons.team {
+  margin-left: 20px;
+  box-shadow: 0 0 6px 6px white inset;
+}
+
+.page--home .content-icons img {
+  width: 90%;
 }
 
 .page--home .brands .content-icons {
@@ -361,20 +396,18 @@ nav .nav-links a:hover {
 }
 
 /***  BRANDS STYLES  ***/
-/*.item-cards.brands .card {
-  width: 20%;
-}*/
-
 .brands h2 {
   margin-top: 50px;
 }
-.item-cards.brands.machinery .card {
-  width: 25%;
+
+.item-cards.rooms img,
+.item-cards.equipment img {
+ width: 100%;
+  margin: auto;
 }
 
-.item-cards.brands img {
-  max-width: 100px;
-  margin: auto;
+.item-cards.equipment .card {
+  width: 33.333333%;
 }
 
 .brands .parts-list li,
@@ -430,7 +463,6 @@ nav .nav-links a:hover {
   width: calc(33.3333% - 30px);
   margin: 0 15px;
   flex-grow: 0;
-  /* margin: auto; */
 }
 
 .person-card .card-content {
@@ -514,44 +546,6 @@ nav .nav-links a:hover {
   margin-top: 20px;
 }
 
-/***  CONTACT US STYLES  ***/
-.contact-form {
-  background: #f1f1f1;
-  padding: 30px;
-  max-width: 600px;
-  margin: 30px auto;
-}
-
-.contact-form h3 {
-  margin-top: 5px;
-}
-
-#contact-form input {
-  margin: 5px 0 10px;
-  width: 100%;
-  height: 30px;
-}
-
-#contact-form textarea {
-  resize: none;
-  margin-top: 5px;
-  width: 100%;
-}
-
-#contact-form .submit {
-  text-align: center;
-}
-
-#contact-form #submit-btn {
-  cursor: pointer;
-  background: #5C5F58;
-  color: white;
-}
-
-#submit-thanks {
-  display: none;
-}
-
 .location {
   display: flex;
   align-items: flex-start;
@@ -566,6 +560,54 @@ nav .nav-links a:hover {
 .location-info {
   margin-left: 40px;
   width: 70%;
+}
+
+
+/* PUBLICATIONS PAGE STYLES */
+.publications {
+  justify-content: space-around;
+}
+
+.publications a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.publications a:hover {
+  color: var(--main-blue);
+}
+
+.articles-list li {
+  padding: 10px 0;
+}
+
+/* PROF HARRINGTON PAGE STYLES */
+.harrington .content-section-inner {
+  margin-bottom: 100px;
+}
+
+.harrington .matt-bio div {
+  width: 50%;
+  position: relative;
+  flex-grow: 0;
+}
+
+.harrington .matt-bio .matt-pic {
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  z-index: 10;
+}
+
+.harrington .matt-bio .matt-description {
+  padding: 20px 20px 20px 35px;
+  background-color: #dedede;
+  bottom: -80px;
+  left: -20px;
+}
+
+.harrington-about {
+  margin-top: 150px;
 }
 
 
@@ -595,10 +637,6 @@ nav .nav-links a:hover {
   }
 
   .item-cards.service .card {
-    width: 50%;
-  }
-
-  .item-cards.brands.machinery .card {
     width: 50%;
   }
 
