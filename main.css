@@ -2,6 +2,10 @@
 	color: #5C5F58;
 }
 
+:root {
+  --main-blue: #0D324D;
+}
+
 html, body {
 	padding: 0px;
 	margin: 0px;
@@ -94,7 +98,7 @@ nav {
   position: fixed;
   z-index: 2;
   width: 100%;
-  background: white;
+  background: var(--main-blue);
 }
 
 nav .mobile-menu-btn {
@@ -122,44 +126,23 @@ nav .nav-links {
 
 .nav-links a {
 	display: inline-block;
-  font-weight: bold;
-	padding: 0 10px;
-	color: #5C5F58;
+	padding: 5px 0 4px;
+  margin: 0 10px;
+	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
+  border-bottom: solid 1px;
+  border-color: transparent;
+  transition: border-color 250ms ease-in-out;
 }
 
-nav .nav-links a:after {
-  display:block;
-  content: '';
-  border-bottom: solid 3px;  
-  transform: scaleX(0);  
-  transition: transform 250ms ease-in-out;
-}
-nav .nav-links a:hover:after { 
-	transform: scaleX(1);
-	transform-origin:  0%;
+.nav-links a.active {
+  border-color: white;
 }
 
-nav .nav-links .social {
-  display: inline-block;
-  padding-left: 10px;
+nav .nav-links a:hover { 
+	border-color: white;
 }
-
-nav .nav-links .social a {
-  padding: 0;
-}
-
-.social a ion-icon {
-  width: 25px;
-  height: 25px;
-  margin-left: 10px;
-}
-
-nav .nav-links .social a:hover:after {
-  transform: scaleX(0);
-}
-
 
 /***  MOBILE NAVIGATION STYLES  ***/
 #nav-menu-mobile {
@@ -241,7 +224,7 @@ nav .nav-links .social a:hover:after {
 }
 
 .content-section-outer {
-  padding: 30px;
+  padding: 80px 30px;
 }
 
 .content-section-inner {
@@ -288,6 +271,10 @@ nav .nav-links .social a:hover:after {
 
 
 /***  HOMEPAGE STYLES  ***/
+.page--home .swiper {
+  width: 100%;
+  height: 600px;
+}
 .page--home .swiper-slide {
 	background-size: cover;
 	background-position: center;
@@ -368,28 +355,10 @@ nav .nav-links .social a:hover:after {
   width: 33.333333%;
 }
 
-.item-cards.service .card-inner ion-icon,
-.services-modal ion-icon {
+.item-cards.service .card-inner ion-icon {
   font-size: 100px;
   color: #4B8D07;
 }
-
-.item-cards.service .card-inner .description {
-  display: none;
-}
-
-.services-modal {
-  text-align: center;
-}
-
-.services-modal.tingle-modal:before {
-  backdrop-filter: none;
-}
-
-.services-modal p {
-  text-align: left;
-}
-
 
 /***  BRANDS STYLES  ***/
 /*.item-cards.brands .card {
@@ -419,51 +388,130 @@ nav .nav-links .social a:hover:after {
 
 
 /***  ABOUT US STYLES  ***/
+.group-title {
+  overflow: hidden;
+  text-align: center;
+}
+
+.group-title:before,
+.group-title:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.group-title:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.group-title:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.group-img {
+  width: 100%;
+}
+
+.current-title {
+  margin: 50px 0 0;
+}
+
 .employee-list {
-  margin: 75px 0;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
 }
 
 .person-card {
-  width: 45%;
-  margin: auto;
+  width: calc(33.3333% - 30px);
+  margin: 0 15px;
+  flex-grow: 0;
+  /* margin: auto; */
 }
 
 .person-card .card-content {
+  position: relative;
+  margin: 20px 0;
   display: flex;
-  /*border: solid 1px;*/
+  transition: top ease 250ms;
+  top: 0;
   box-shadow: 0 3px 6px #5C5F58;
   flex-direction: column;
-  padding: 30px;
-  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+}
+
+.person-card .card-content:hover {
+  top: -10px;
 }
 
 .person-card img {
-  max-width: 150px;
-  border-radius: 100%;
-  border: solid 1px;
-  margin-bottom: 20px;
+  width: 100%;
+  
 }
 
 .person-card h2,
-.person-card h4 {
-  margin: 5px;
+.person-card h4,
+.person-modal h2,
+.person-modal h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.person-card .text-content {
+  padding: 30px;
 }
 
 .person-card .contact-info {
   margin-top: 10px;
 }
 
-.person-card .contact-item {
-  margin-top: 10px;
+.person-card .contact-info p {
+  font-size: 12px;
+  margin: 0 0 5px;
 }
 
-.person-card .contact-item span {
-  display: block;
-  padding: 5px 0;
-}
-
-.person-card .contact-item span a {
+.person-card p a {
   text-decoration: none;
+  color: #64bcfc;
+
+}
+
+.person-card .description {
+  display: none;
+}
+
+.person-modal.tingle-modal:before {
+  backdrop-filter: none;
+}
+
+.person-modal .tingle-modal-box__content {
+  display: flex;
+}
+
+.person-modal .img-div {
+  width: 30%;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+
+.person-modal .img-div img {
+  width: 100%;
+  height: auto;
+}
+
+.person-modal .contact-info {
+  display: none;
+}
+
+.person-modal .description {
+  margin-top: 20px;
 }
 
 /***  CONTACT US STYLES  ***/

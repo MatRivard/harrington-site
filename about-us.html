@@ -1,17 +1,19 @@
 <html>
   <head>
-    <title>LS Equipment - About Us</title>
-    <meta name="description" content="LS Equipment employees and company information.">
+    <title>Harrington Lab - Group</title>
+    <meta name="description" content="Information about the current and past members of the Harrington lab.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="./assets/placeholder-logo-cropped.jpg">
+    <link rel="icon" type="image/jpg" href="./assets/cropped-white-text-nobg.png">
     <link rel="stylesheet" type="text/css" href="./main.css">
     <script type="text/javascript" src="./main.js"></script>
+    <script src="./tingle.min.js"></script>
+    <link rel="stylesheet" href="./tingle.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat">
   </head>
   <body class="page--about">
     <div id="nav-menu-mobile">
       <ion-icon name="close" id="mobile-menu-close" onclick="closeMobileMenu()"></ion-icon>
-      <a href="/">Home</a>
+      <a href="./index.html">Home</a>
       <a href="./about-us.html">About Us</a>
       <a href="./services.html">Services</a>
       <a href="./brands.html">Brands</a>
@@ -29,24 +31,16 @@
       <ion-icon name="menu" class="mobile-menu-btn" onclick="openMobileMenu()"></ion-icon>
       <div class="inner-content">
         <div class="logo">
-          <a href="/">
-            <img src="./assets/placeholder-logo-cropped.jpg">
+          <a href="./index.html">
+            <img src="./assets/cropped-white-text-nobg.png">
           </a>
         </div>
         <div class="nav-links">
-          <a href="/">Home</a>
+          <a href="./index.html">Home</a>
           <a href="./about-us.html">About Us</a>
           <a href="./services.html">Services</a>
           <a href="./brands.html">Brands</a>
           <a href="./contact.html">Contact Us</a>
-          <div class="social">
-            <a href="https://www.facebook.com/lsequipmentandservices/" rel="external" target="_blank">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-            <a href="https://www.instagram.com/lsequipmentservices/" rel="external" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </div>
         </div>
       </div>
     </nav>
@@ -54,42 +48,277 @@
     <div class="main-content">
       <div class="content-section-outer">
         <div class="content-section-inner">
-          <h1>ABOUT US</h1>
-          <p>LS Equipment is a full-service mechanical company primarily servicing Ontario and Quebec. Founded in 2011 in Porcupine, ON, we have recently expanded by opening a branch in the New Liskeard area in 2021. See below for further information about our team.</p>
-
+          <h1 class="text-center group-title">The Harrington Group</h1>
+          <img class="group-img" alt="Current Harrington lab group" src="./assets/group.jpg">
+          
+          <h2 class="current-title">Current members</h2>
           <div class="employee-list flex">
-            <div class="person-card">
+
+            <!-- <div class="person-card">
               <div class="card-content">
-                <!-- <img src="./assets/placeholder-person.png"> -->
-                <h2 class="person-name">Zakary Rivard</h2>
-                <h4 class="person-title">New Liskeard Branch</h4>
-                <div class="contact-info">
-                  <div class="contact-item">
-                    <span><ion-icon name="call"></ion-icon> : &nbsp; <a href="tel:705-274-8854">(705) 274-8854</a></span>
-                    <span><ion-icon name="mail"></ion-icon> : &nbsp; <a href="mailto:zakrivard@lsequipment.ca">zakrivard@lsequipment.ca</a></span>
+                <div class="img-div">
+                  <img src="./assets/placeholder-person.png" alt="Hamideh Rezvani Alanagh">
+                </div>
+                <div class="text-content">
+                  <h2 class="person-name">Hamideh Rezvani Alanagh</h2>
+                  <h4 class="person-title">Postdoc</h4>
+                  <div class="contact-info">
+                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p><a href="mailto:hamideh.rezvanialanagh@mail.mcgill.ca">hamideh.rezvanialanagh@mail.mcgill.ca</a></p>
+                  </div>
+                  <div class="description">
                   </div>
                 </div>
-                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p> -->
+              </div>
+            </div> -->
+
+            <div class="person-card">
+              <div class="card-content">
+                <div class="img-div">
+                  <img src="./assets/lab-members/deniz.jpg" alt="Deniz Eren">
+                </div>
+                <div class="text-content">
+                  <h2 class="person-name">Deniz Eren</h2>
+                  <h4 class="person-title">Postdoc</h4>
+                  <div class="contact-info">
+                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p><a href="mailto:egemendenizeren@gmail.com">egemendenizeren@gmail.com</a></p>
+                  </div>
+                  <div class="description">
+                  </div>
+                </div>
               </div>
             </div>
+
             <div class="person-card">
               <div class="card-content">
-                <!-- <img src="./assets/placeholder-person.png"> -->
-                <h2 class="person-name">Louis Viau</h2>
-                <h4 class="person-title">Timmins Branch</h4>
-                <div class="contact-info">
-                  <div class="contact-item">
-                    <span><ion-icon name="call"></ion-icon> : &nbsp; <a href="tel:705-221-3968">(705) 221-3968</a></span>
-                    <span><ion-icon name="mail"></ion-icon> : &nbsp; <a href="mailto:louisviau@lsequipment.ca">louisviau@lsequipment.ca</a></span>
+                <div class="img-div">
+                  <img src="./assets/lab-members/tobias.jpg" alt="Tobias Priemel">
+                </div>
+                <div class="text-content">
+                  <h2 class="person-name">Tobias Priemel</h2>
+                  <h4 class="person-title">Ph.D. Student</h4>
+                  <div class="contact-info">
+                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p><a href="mailto:tobias.priemel@mail.mcgill.ca">tobias.priemel@mail.mcgill.ca</a></p>
+                  </div>
+                  <div class="description">
+                    Originally from Germany, Tobias joined the Harrington lab back in its days in Potsdam, where he finished his
+                    Bachelor's and Master's in Biochemistry. His interest and curiosity towards nature lead him to study biological 
+                    materials and their production processes with the focus on the mussel byssus. Besides research, Tobias liked to play
+                    volleyball, frisbee, soccer and basically any other sport where you can enjoy a cold blonde with your team afterwards.
                   </div>
                 </div>
-                <!-- <p>Louis Viau is the founder of LS Equipment.</p> -->
+              </div>
+            </div>
+
+            <div class="person-card">
+              <div class="card-content">
+                <div class="img-div">
+                  <img src="./assets/lab-members/max.jpg" alt="Max Renner-Rao">
+                </div>
+                <div class="text-content">
+                  <h2 class="person-name">Max Renner-Rao</h2>
+                  <h4 class="person-title">Ph.D. Student</h4>
+                  <div class="contact-info">
+                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p><a href="mailto:max.renner-rao@mail.mcgill.ca">max.renner-rao@mail.mcgill.ca</a></p>
+                  </div>
+                  <div class="description">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="person-card">
+              <div class="card-content">
+                <div class="img-div">
+                  <img src="./assets/lab-members/mostafa.jpg" alt="Mostafa Rammal">
+                </div>
+                <div class="text-content">
+                  <h2 class="person-name">Mostafa Rammal</h2>
+                  <h4 class="person-title">Ph.D. Student</h4>
+                  <div class="contact-info">
+                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p><a href="mailto:mostafa.rammal@mail.mcgill.ca">mostafa.rammal@mail.mcgill.ca</a></p>
+                  </div>
+                  <div class="description">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="person-card">
+              <div class="card-content">
+                <div class="img-div">
+                  <img src="./assets/lab-members/lucia.jpg" alt="Lucia Youssef">
+                </div>
+                <div class="text-content">
+                  <h2 class="person-name">Lucia Youssef</h2>
+                  <h4 class="person-title">Ph.D. Student</h4>
+                  <div class="contact-info">
+                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p><a href="mailto:lucia.youssef@mail.mcgill.ca">lucia.youssef@mail.mcgill.ca</a></p>
+                  </div>
+                  <div class="description">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="person-card">
+              <div class="card-content">
+                <div class="img-div">
+                  <img src="./assets/lab-members/stephen.jpg" alt="Stephen George">
+                </div>
+                <div class="text-content">
+                  <h2 class="person-name">Stephen George</h2>
+                  <h4 class="person-title">Ph.D. Student</h4>
+                  <div class="contact-info">
+                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p><a href="mailto:stephen.george@mail.mcgill.ca">stephen.george@mail.mcgill.ca</a></p>
+                  </div>
+                  <div class="description">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="person-card">
+              <div class="card-content">
+                <div class="img-div">
+                  <img src="./assets/lab-members/jenaes.jpg" alt="Jenaes Siva">
+                </div>
+                <div class="text-content">
+                  <h2 class="person-name">Jenaes Siva</h2>
+                  <h4 class="person-title">Masters Student</h4>
+                  <div class="contact-info">
+                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p><a href="mailto:jenaes.sivasundarampillai@mail.mcgill.ca">jenaes.sivasundarampillai@mail.mcgill.ca</a></p>
+                  </div>
+                  <div class="description">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="person-card">
+              <div class="card-content">
+                <div class="img-div">
+                  <img src="./assets/lab-members/gagan.jpg" alt="Gagan Daliaho">
+                </div>
+                <div class="text-content">
+                  <h2 class="person-name">Gagan Daliaho</h2>
+                  <h4 class="person-title">Masters Student</h4>
+                  <div class="contact-info">
+                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p><a href="mailto:gagan.daliaho@mail.mcgill.ca">gagan.daliaho@mail.mcgill.ca</a></p>
+                  </div>
+                  <div class="description">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="person-card">
+              <div class="card-content">
+                <div class="img-div">
+                  <img src="./assets/lab-members/mat.jpg" alt="Mathieu Rivard">
+                </div>
+                <div class="text-content">
+                  <h2 class="person-name">Mathieu Rivard</h2>
+                  <h4 class="person-title">Masters Student</h4>
+                  <div class="contact-info">
+                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p><a href="mailto:mathieu.rivard2@mail.mcgill.ca">mathieu.rivard2@mail.mcgill.ca</a></p>
+                  </div>
+                  <div class="description">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="person-card">
+              <div class="card-content">
+                <div class="img-div">
+                  <img src="./assets/lab-members/guido.jpg" alt="Guido Merino">
+                </div>
+                <div class="text-content">
+                  <h2 class="person-name">Guido Merino</h2>
+                  <h4 class="person-title">Masters Student</h4>
+                  <div class="contact-info">
+                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p><a href="mailto:guido.merino@mail.mcgill.ca">guido.merino@mail.mcgill.ca</a></p>
+                  </div>
+                  <div class="description">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="person-card">
+              <div class="card-content">
+                <div class="img-div">
+                  <img src="./assets/lab-members/sam.jpg" alt="Samantha Jee">
+                </div>
+                <div class="text-content">
+                  <h2 class="person-name">Samantha Jee</h2>
+                  <h4 class="person-title">Masters Student</h4>
+                  <div class="contact-info">
+                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p><a href="mailto:samantha.jee@mail.mcgill.ca">samantha.jee@mail.mcgill.ca</a></p>
+                  </div>
+                  <div class="description">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="person-card">
+              <div class="card-content">
+                <div class="img-div">
+                  <img src="./assets/lab-members/jack.jpg" alt="Jack Anderson">
+                </div>
+                <div class="text-content">
+                  <h2 class="person-name">Jack Anderson</h2>
+                  <h4 class="person-title">Masters Student</h4>
+                  <div class="contact-info">
+                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p><a href="mailto:john.anderson2@mail.mcgill.ca">john.anderson2@mail.mcgill.ca</a></p>
+                  </div>
+                  <div class="description">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="person-card">
+              <div class="card-content">
+                <div class="img-div">
+                  <img src="./assets/lab-members/paolo.jpg" alt="Paolo Pedrazzini">
+                </div>
+                <div class="text-content">
+                  <h2 class="person-name">Paolo Pedrazzini</h2>
+                  <h4 class="person-title">Visiting Masters Student</h4>
+                  <div class="contact-info">
+                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p><a href="mailto:paolo.pedrazzini@epfl.ch">paolo.pedrazzini@epfl.ch</a></p>
+                  </div>
+                  <div class="description">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <!-- Current students list END -->
+
+          <h2>Past Members</h2>
+          <p>Mat Rivard</p>
+          <p>Mat Rivard</p>
+          <p>Mat Rivard</p>
+          <p>Mat Rivard</p>
+          <p>Mat Rivard</p>
+
         </div>
       </div>
     </div>
@@ -97,7 +326,7 @@
     <div class="footer">
       <div class="footer-inner">
         <div class="logo">
-          <img src="./assets/placeholder-logo-cropped.jpg">
+          <img src="./assets/cropped-white-text-nobg.png">
         </div>
         <div class="nav-links">
           <a href="/">Home</a>
@@ -123,5 +352,23 @@
       </div>
     </div>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script>
+       // instantiate new modal
+       var modal = new tingle.modal({
+          closeMethods: ['overlay', 'button', 'escape'],
+          cssClass: ['person-modal']
+      });
+
+      var cards = document.getElementsByClassName('card-content');
+      var openModal = function () {
+        var modalContent = this.innerHTML;
+        modal.setContent(modalContent);
+        modal.open();
+      }
+
+      for (var i = 0; i < cards.length; i++) {
+        cards[i].addEventListener('click', openModal, false)
+      }
+    </script>
   </body>
 </html>

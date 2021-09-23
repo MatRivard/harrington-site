@@ -1,69 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LS Equipment - Home</title>
+    <title>Harrington Lab - Home</title>
     <meta name="description" content="LS Equipment is a full-service mechanical company in the heavy equipment industry based in northern Ontario.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="./main.js"></script>
-    <link rel="icon" type="image/jpg" href="./assets/placeholder-logo-cropped.jpg">
+    <link rel="icon" type="image/jpg" href="./assets/cropped-black-text-nobg.png">
     <link rel="stylesheet" type="text/css" href="./main.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   </head>
   <body class="page--home">
     <div id="nav-menu-mobile">
       <ion-icon name="close" id="mobile-menu-close" onclick="closeMobileMenu()"></ion-icon>
-      <a href="/">Home</a>
+      <a href="./index.html">Home</a>
       <a href="./about-us.html">About Us</a>
       <a href="./services.html">Services</a>
       <a href="./brands.html">Brands</a>
       <a href="./contact.html">Contact Us</a>
-      <div class="social">
-        <a href="https://www.facebook.com/lsequipmentandservices/" rel="external" target="_blank">
-          <ion-icon name="logo-facebook"></ion-icon>
-        </a>
-        <a href="https://www.instagram.com/lsequipmentservices/" rel="external" target="_blank">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a>
-      </div>
     </div>
     <nav class="main--nav">
       <ion-icon name="menu" class="mobile-menu-btn" onclick="openMobileMenu()"></ion-icon>
       <div class="inner-content">
         <div class="logo">
-          <a href="/">
-            <img src="./assets/placeholder-logo-cropped.jpg">
+          <a href="./index.html">
+            <img src="./assets/cropped-white-text-nobg.png">
           </a>
         </div>
         <div class="nav-links">
-          <a href="/">Home</a>
+          <a href="./index.html" class="active">Home</a>
           <a href="./about-us.html">About Us</a>
           <a href="./services.html">Services</a>
           <a href="./brands.html">Brands</a>
           <a href="./contact.html">Contact Us</a>
-          <div class="social">
-            <a href="https://www.facebook.com/lsequipmentandservices/" rel="external" target="_blank">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-            <a href="https://www.instagram.com/lsequipmentservices/" rel="external" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </div>
         </div>
       </div>
     </nav>
 
     <div class="main-content">
       <div class="banner-section">
-        <div class="swiper-container">
+        <div class="swiper">
           <div class="swiper-wrapper">
               <div class="swiper-slide" style="background-image: url('./assets/placeholder-slide-1.jpg');">
                 <!-- <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua.</div> -->
               </div>
 
-              <div class="swiper-slide" style="background-image: url('./assets/placeholder-slide-2.jpg');">
+              <div class="swiper-slide" style="background-image: url('./assets/placeholder-slide-2.png');">
                 <!-- <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua.</div> -->
               </div>
@@ -132,7 +120,7 @@
     <div class="footer">
       <div class="footer-inner">
         <div class="logo">
-          <img src="./assets/placeholder-logo-cropped.jpg">
+          <img src="./assets/cropped-white-text-nobg.png">
         </div>
         <div class="nav-links">
           <a href="/">Home</a>
@@ -161,7 +149,7 @@
     <!-- Initialize SwiperJS -->
     <script type="text/javascript">
 
-      var swiper = new Swiper('.swiper-container', {
+      var swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
