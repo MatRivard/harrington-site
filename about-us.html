@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
   <head>
     <title>Harrington Lab - Group</title>
     <meta name="description" content="Information about the current and past members of the Harrington lab.">
@@ -76,7 +76,7 @@
                   <h2 class="person-name">Deniz Eren</h2>
                   <h4 class="person-title">Postdoc</h4>
                   <div class="contact-info">
-                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p>Pulp &amp; Paper, Room 117</p>
                     <p><a href="mailto:egemendenizeren@gmail.com">egemendenizeren@gmail.com</a></p>
                   </div>
                   <div class="description">
@@ -101,7 +101,7 @@
                   <h2 class="person-name">Tobias Priemel</h2>
                   <h4 class="person-title">Ph.D. Student</h4>
                   <div class="contact-info">
-                    <p>Pulp &amp; Paper, Room 011</p>
+                    <p>Pulp &amp; Paper, Room 021</p>
                     <p><a href="mailto:tobias.priemel@mail.mcgill.ca">tobias.priemel@mail.mcgill.ca</a></p>
                   </div>
                   <div class="description">
@@ -123,7 +123,7 @@
                   <h2 class="person-name">Max Renner-Rao</h2>
                   <h4 class="person-title">Ph.D. Student</h4>
                   <div class="contact-info">
-                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p>Pulp &amp; Paper, Room 117</p>
                     <p><a href="mailto:max.renner-rao@mail.mcgill.ca">max.renner-rao@mail.mcgill.ca</a></p>
                   </div>
                   <div class="description">
@@ -170,7 +170,7 @@
                   <h2 class="person-name">Lucia Youssef</h2>
                   <h4 class="person-title">Ph.D. Student</h4>
                   <div class="contact-info">
-                    <p>Pulp &amp; Paper, Room 011</p>
+                    <p>Pulp &amp; Paper, Room 021</p>
                     <p><a href="mailto:lucia.youssef@mail.mcgill.ca">lucia.youssef@mail.mcgill.ca</a></p>
                   </div>
                   <div class="description">
@@ -194,7 +194,7 @@
                   <h2 class="person-name">Stephen George</h2>
                   <h4 class="person-title">Ph.D. Student</h4>
                   <div class="contact-info">
-                    <p>Pulp &amp; Paper, Room 011</p>
+                    <p>Pulp &amp; Paper, Room 021</p>
                     <p><a href="mailto:stephen.george@mail.mcgill.ca">stephen.george@mail.mcgill.ca</a></p>
                   </div>
                   <div class="description">
@@ -233,7 +233,7 @@
                   <h2 class="person-name">Gagan Daliaho</h2>
                   <h4 class="person-title">Masters Student</h4>
                   <div class="contact-info">
-                    <p>Pulp &amp; Paper, Room 011</p>
+                    <p>Pulp &amp; Paper, Room 021</p>
                     <p><a href="mailto:gagan.daliaho@mail.mcgill.ca">gagan.daliaho@mail.mcgill.ca</a></p>
                   </div>
                   <div class="description">
@@ -309,10 +309,16 @@
                   <h2 class="person-name">Samantha Jee</h2>
                   <h4 class="person-title">Masters Student</h4>
                   <div class="contact-info">
-                    <p>Pulp &amp; Paper, Room 110</p>
+                    <p>Pulp &amp; Paper, Room 117</p>
                     <p><a href="mailto:samantha.jee@mail.mcgill.ca">samantha.jee@mail.mcgill.ca</a></p>
                   </div>
                   <div class="description">
+                    Having been raised in Halifax, Nova Scotia, Sam received her BSc with Honours in chemistry
+                    from Dalhousie University in 2021. Pursuing her interest in green chemistry, her research in
+                    the Harrington group focuses on characterizing metal storage particles found in the mussel
+                    byssus with the hope of using them in the creation of future bioinspired materials. Outside
+                    of the lab, Sam can be found hiking, crocheting yet another sweater, or exploring Montreal's
+                    vast array of cafés.
                   </div>
                 </div>
               </div>
@@ -409,7 +415,11 @@
       });
 
       var cards = document.getElementsByClassName('card-content');
-      var openModal = function () {
+      var openModal = function (e) {
+        // Do not open modal if email is clicked
+        if (e.target.tagName.toLowerCase() === 'a') {
+          return null;
+        }
         var modalContent = this.innerHTML;
         modal.setContent(modalContent);
         modal.open();
