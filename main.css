@@ -91,12 +91,29 @@ body {
   font-size: 16px;
 }
 
+.item-cards.rooms img,
+.item-cards.equipment img {
+ width: 100%;
+  margin: auto;
+}
+
+.item-cards.equipment .card {
+  width: 33.333333%;
+}
+
+@media screen and (max-width: 600px) {
+  .item-cards .card,
+  .item-cards.equipment .card {
+    width: 100%;
+  }
+}
+
 /***  MAIN NAVIGATION STYLES  ***/
 nav {
 	box-shadow: 0 3px 2px -2px #5C5F58;
 	padding: 0;
   position: fixed;
-  z-index: 200;
+  z-index: 100;
   width: 100%;
   background: var(--main-blue);
 }
@@ -147,7 +164,7 @@ nav .nav-links a:hover {
 
 /***  MOBILE NAVIGATION STYLES  ***/
 #nav-menu-mobile {
-  z-index: 10;
+  z-index: 1000;
   padding-top: 40px;
   width: 0;
   overflow-x: hidden;
@@ -161,8 +178,10 @@ nav .nav-links a:hover {
 }
 
 #nav-menu-mobile #mobile-menu-close {
+  cursor: pointer;
   position: absolute;
   color: #ffffff;
+  fill: #ffffff;
   right: 15px;
   top: 10px;
   font-size: 24px;
@@ -204,6 +223,7 @@ nav .nav-links a:hover {
   }
 
   nav .mobile-menu-btn {
+    cursor: pointer;
     display: block;
     position: absolute;
     font-size: 30px;
@@ -318,9 +338,8 @@ nav .nav-links a:hover {
 
 @media screen and (max-width: 500px) {
   .page--home .swiper-slide .text-content {
-    right: 50%;
-    transform: translateX(50%);
-    width: 80%;
+    width: auto;
+    margin: 10px;
     text-align: center;
   }
 }
@@ -400,15 +419,7 @@ nav .nav-links a:hover {
   margin-top: 50px;
 }
 
-.item-cards.rooms img,
-.item-cards.equipment img {
- width: 100%;
-  margin: auto;
-}
 
-.item-cards.equipment .card {
-  width: 33.333333%;
-}
 
 .brands .parts-list li,
 .brands .oils-list li {
@@ -562,6 +573,13 @@ nav .nav-links a:hover {
   width: 70%;
 }
 
+
+/* RESEARCH PAGE STYLES */
+@media screen and (max-width: 1000px) {
+  .workflow-img {
+    width: 100%;
+  }
+}
 
 /* PUBLICATIONS PAGE STYLES */
 .publications {
