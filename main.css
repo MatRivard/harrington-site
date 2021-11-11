@@ -494,9 +494,26 @@ nav .nav-links a:hover {
   top: -10px;
 }
 
+.person-card .img-div {
+  position: relative;
+}
+
+.person-card .img-div:before {
+  content: "";
+  display: block;
+  margin-top: 100%;
+}
 .person-card img {
   width: 100%;
-  
+  opacity: 0;
+  transition: opacity 350ms ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.person-card img[data-loaded="true"] {
+  opacity: 1;
 }
 
 .person-card h2,
