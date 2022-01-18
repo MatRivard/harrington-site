@@ -274,7 +274,7 @@ nav .nav-links a:hover {
 }
 
 .footer-inner .logo img {
-  height: 60px;
+  height: 110px;
 }
 
 .footer-inner .nav-links {
@@ -634,6 +634,10 @@ nav .nav-links a:hover {
   z-index: 10;
 }
 
+.harrington .matt-bio .matt-pic.mobile {
+  display: none;
+}
+
 .harrington .matt-bio .matt-description {
   padding: 20px 20px 20px 35px;
   background-color: #dedede;
@@ -677,6 +681,30 @@ nav .nav-links a:hover {
 
   .location .location-info h2 {
     font-size: 20px;
+  }
+
+  .harrington .matt-bio.flex {
+    display: block !important;
+  }
+
+  .harrington .matt-bio div {
+    width: auto;
+  }
+
+  .harrington .matt-bio .matt-description {
+    bottom: auto;
+    left: auto;
+  }
+
+  .harrington .matt-bio .matt-pic.desktop {
+    display: none;
+  }
+
+  .harrington .matt-bio .matt-pic.mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
   }
 
   .footer-inner {
