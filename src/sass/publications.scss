@@ -1,0 +1,19 @@
+/* PUBLICATIONS PAGE STYLES */
+.page--publications {
+  .publications {
+    justify-content: space-around;
+  }
+  
+  .publications a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .publications a:hover {
+    color: var(--main-blue);
+  }
+  
+  .articles-list li {
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,178 @@
+/***  ABOUT US (GROUP) STYLES  ***/
+.page--about {
+  .group-title {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .group-title:before,
+  .group-title:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+  
+  .group-title:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  .group-title:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+  .group-img {
+    width: 100%;
+  }
+  
+  .current-title {
+    margin: 50px 0 0;
+  }
+  
+  .employee-list {
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+  }
+  
+  .person-card {
+    width: calc(33.3333% - 30px);
+    margin: 0 15px;
+    flex-grow: 0;
+
+    .card-content {
+      position: relative;
+      margin: 20px 0;
+      display: flex;
+      transition: top ease 250ms;
+      top: 0;
+      box-shadow: 0 3px 6px #5C5F58;
+      flex-direction: column;
+      border-radius: 5px;
+      overflow: hidden;
+      padding: 0;
+      cursor: pointer;
+    }
+    
+    .card-content:hover {
+      top: -10px;
+    }
+    
+    .img-div {
+      position: relative;
+    }
+    
+    .img-div:before {
+      content: "";
+      display: block;
+      margin-top: 100%;
+    }
+    img {
+      width: 100%;
+      opacity: 0;
+      transition: opacity 350ms ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    img[data-loaded="true"] {
+      opacity: 1;
+    }
+
+    .text-content {
+      padding: 30px;
+    }
+    
+    .contact-info {
+      margin-top: 10px;
+    }
+    
+    .contact-info p {
+      font-size: 12px;
+      margin: 0 0 5px;
+    }
+    
+    p a {
+      text-decoration: none;
+      color: #64bcfc;
+    
+    }
+    
+    .description {
+      display: none;
+    }
+  }
+  
+  .person-card h2,
+  .person-card h4,
+  .person-modal h2,
+  .person-modal h4 {
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  .person-modal.tingle-modal:before {
+    backdrop-filter: none;
+  }
+  
+  .person-modal .tingle-modal-box__content {
+    display: flex;
+  }
+  
+  .person-modal .img-div {
+    width: 30%;
+    flex-shrink: 0;
+    margin-right: 30px;
+  }
+  
+  .person-modal .img-div img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .person-modal .contact-info {
+    display: none;
+  }
+  
+  .person-modal .description {
+    margin-top: 20px;
+  }
+  
+  .past-members p {
+    margin: 0 0 5px;
+  }
+  
+  .past-members h3 {
+    margin: 30px 0 5px;
+  }
+  
+  .past-members p.student-type {
+    margin: 20px 0 10px;
+  }
+  
+  .location {
+    display: flex;
+    align-items: flex-start;
+    margin: 40px 0;
+  }
+  
+  .location iframe {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .location-info {
+    margin-left: 40px;
+    width: 70%;
+  }
+
+  @media screen and (max-width: 500px) {
+    .content-section-outer {
+      padding: 15px;
+    }
+  }
+}

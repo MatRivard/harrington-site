@@ -1,0 +1,60 @@
+/* PROF HARRINGTON PAGE STYLES */
+.page--harrington {
+  .content-section-inner {
+    margin-bottom: 100px;
+  }
+  
+  .matt-bio div {
+    width: 50%;
+    position: relative;
+    flex-grow: 0;
+  }
+  
+  .matt-bio .matt-pic {
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    z-index: 10;
+  }
+  
+  .matt-bio .matt-pic.mobile {
+    display: none;
+  }
+  
+  .matt-bio .matt-description {
+    padding: 20px 20px 20px 35px;
+    background-color: #dedede;
+    bottom: -80px;
+    left: -20px;
+  }
+  
+  .harrington-about {
+    margin-top: 150px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .matt-bio.flex {
+      display: block !important;
+    }
+  
+    .matt-bio div {
+      width: auto;
+    }
+  
+    .matt-bio .matt-description {
+      bottom: auto;
+      left: auto;
+    }
+  
+    .matt-bio .matt-pic.desktop {
+      display: none;
+    }
+  
+    .matt-bio .matt-pic.mobile {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
+}

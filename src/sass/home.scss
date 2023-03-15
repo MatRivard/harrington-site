@@ -1,0 +1,116 @@
+/***  HOMEPAGE STYLES  ***/
+.page--home {
+  .swiper {
+    width: 100%;
+    height: 600px;
+  }
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .swiper-slide .text-content {
+    position: absolute;
+    text-align: left;
+    bottom: 50px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.7);
+    width: 400px;
+    max-width: 400px;
+    padding: 30px;
+  }
+  
+  .swiper-slide .text-content h2,
+  .swiper-slide .text-content p,
+  .swiper-slide .text-content a {
+    color: black;
+  }
+  
+  .swiper-container {
+    height: 500px;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .swiper-slide .text-content {
+      width: auto;
+      margin: 10px;
+      text-align: center;
+    }
+  }
+  
+  .content-section-inner > div {
+    width: 50%;
+  }
+  
+  .content-section-inner.left {
+    justify-content: flex-start;
+  }
+  
+  .content-section-inner.right {
+    justify-content: flex-end;
+  }
+  
+  .services,
+  .contact {
+    background: #e0e0e0;
+  }
+  
+  .services h1, .services p {
+    color: #5C5F58;
+  }
+  
+  .content-icons {
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .content-icons.lab {
+    margin-right: 20px;
+    box-shadow: 0 0 6px 6px #e0e0e0 inset;
+  }
+  
+  .content-icons.team {
+    margin-left: 20px;
+    box-shadow: 0 0 6px 6px white inset;
+  }
+  
+  .content-icons img {
+    width: 90%;
+  }
+  
+  .brands .content-icons {
+    flex-wrap: wrap;
+  }
+  
+  .content-icons ion-icon {
+    font-size: 100px;
+    margin: 0 20px;
+  }
+  
+  .brands .content-icons .img {
+    padding: 0 15px;
+    max-width: 30%;
+  }
+  
+  .brands .content-icons .img img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .content-section-inner > div {
+      width: 100%;
+    }
+
+    .content-section-inner .content-icons {
+      order: 1;
+    }
+
+    .content-section-inner .content-text {
+      order: 2;
+    }
+  }
+}
