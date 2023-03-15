@@ -19,4 +19,18 @@ function checkActiveLink() {
   }
 }
 
+function showSection(sectionId, event) {
+  const buttons = document.getElementsByClassName("subsection");
+  const sections = document.getElementsByClassName("subsection-text");
+  const activeSection = document.getElementById(sectionId)
+
+  for (var i = 0; i < sections.length; i++) {
+    sections[i].classList.remove("visible")
+    buttons[i].classList.remove("active")
+  }
+
+  activeSection.classList.add("visible")
+  event.target.classList.add("active")
+}
+
 checkActiveLink();
