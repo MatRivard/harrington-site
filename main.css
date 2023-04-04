@@ -694,6 +694,29 @@ nav .nav-links a:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .research-subsections {
+    flex-wrap: wrap;
+  }
+  .research-subsections .subsection {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+  }
+
+  .spacer {
+    width: 250px;
+  }
+
+  .subtopics {
+    display: block;
+  }
+
+  .subtopics .subtopic {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
+
 /* PUBLICATIONS PAGE STYLES */
 .publications {
   justify-content: space-around;
