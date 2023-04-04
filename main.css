@@ -620,8 +620,9 @@ nav .nav-links a:hover {
 }
 
 .research-subsections-header {
+  font-size: 20px;
   text-align: center;
-  padding: 5px 10px;
+  padding: 10px 5px 30px;
 }
 
 .research-subsections {
@@ -635,11 +636,11 @@ nav .nav-links a:hover {
   font-weight: bold;
   width: calc(25% - 10px);
   border: solid 1px;
-  border-color: rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.2);
   padding: 15px;
   margin: 0 5px;
   cursor: pointer;
-  transition: background-color, color 300ms ease-in-out;
+  transition: background-color, color, 250ms ease-in-out;
 }
 
 .research-subsections .subsection:hover,
@@ -664,7 +665,8 @@ nav .nav-links a:hover {
 .subtopics img {
   width: 100%;
   height: 300px;
-  object-fit: cover;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
 .subtopics .subtopic {
