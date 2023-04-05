@@ -883,3 +883,204 @@ nav .nav-links a:hover {
     padding: 15px;
   }
 }
+
+
+/* SOCIAL PAGE STYLES */
+.projects h2 {
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.project-list {
+  position: relative;
+}
+
+.center-line {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: var(--main-bg-color);
+}
+
+.project-item {
+  padding: 50px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* .project-item ~ .project-item {
+  padding-top: 100px;
+} */
+
+.project-title {
+  position: absolute;
+  display: block;
+  font-size: 30px;
+  padding: 20px 0;
+  color: var(--main-text-color);
+  z-index: 10;
+}
+
+.project-content {
+  width: 55%;
+  text-align: center;
+  transition: transform 150ms linear;
+  transform: translateY(20px);
+}
+
+.project-content .content-inner {
+  width: 600px;
+  height: 345px;
+  cursor: pointer;
+  margin: auto;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: background-size 200ms ease-in;
+}
+
+.project-content .content-inner:hover {
+  background-size: 105%;
+}
+
+.project-content .hover-text {
+  opacity: 0;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  transition: opacity 250ms ease-in-out;
+}
+
+.project-content .content-inner:hover .hover-text {
+  opacity: 1
+}
+
+.project-content .hover-text p {
+  padding: 10px 20px;
+}
+
+/* Styling for right side items*/
+.project-item.right {
+  justify-content: flex-start;
+}
+
+.project-item.right .project-title {
+  left: 49%;
+}
+
+.project-item.right .project-title:before {
+  content: "";
+  background-color: var(--main-bg-color); 
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  left: 0.8vw;
+  top: 0;
+}
+
+
+/* Styling for left side items*/
+.project-item.left {
+  justify-content: flex-end;
+}
+
+.project-item.left .project-title {
+  right: 49%;
+  text-align: right;
+}
+
+.project-item.left .project-title:before {
+  content: "";
+  background-color: var(--main-bg-color);  
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  right: 0.8vw;
+  top: 0;
+}
+
+.project-title span {
+  display: block;
+  position: relative;
+}
+
+.project-title a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.project-title .title-txt {
+  font-size: 30px;
+}
+
+.img-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .project-content .content-inner {
+    width: 400px;
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .img-mobile {
+    display: block;
+    max-width: 100%;
+  }
+
+  .project-item {
+    padding: 100px 0;
+  }
+
+  .project-title:before,
+  .center-line {
+    display: none !important;
+  }
+
+  .project-item.right .project-title {
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  .project-item.left .project-title {
+    top: 0;
+    transform: translateX(50%);
+  }
+
+  .project-item .project-content {
+    width: 100%;
+  }
+
+  .project-content .content-inner {
+    background-image: none !important;
+    width: auto;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .project-content .hover-text {
+    opacity: 1;
+    background-color: transparent;
+    height: auto;
+  }
+
+  .project-content .hover-text p {
+    color: var(--main-bg-color);
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.projects { margin-bottom: 0; }
+  .project-title { width: 100%; }
+}
