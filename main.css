@@ -886,9 +886,13 @@ nav .nav-links a:hover {
 
 
 /* SOCIAL PAGE STYLES */
+.projects {
+  margin-bottom: 50px;
+}
+
 .projects h2 {
   text-align: center;
-  color: var(--main-text-color);
+  margin: 50px 0;
 }
 
 .project-list {
@@ -902,7 +906,7 @@ nav .nav-links a:hover {
   bottom: 0;
   left: 50%;
   width: 1px;
-  background-color: var(--main-bg-color);
+  background-color: var(--main-blue);
 }
 
 .project-item {
@@ -912,17 +916,16 @@ nav .nav-links a:hover {
   align-items: center;
 }
 
-/* .project-item ~ .project-item {
-  padding-top: 100px;
-} */
-
 .project-title {
   position: absolute;
   display: block;
   font-size: 30px;
   padding: 20px 0;
-  color: var(--main-text-color);
   z-index: 10;
+}
+
+.title-txt {
+  color: var(--main-blue);
 }
 
 .project-content {
@@ -953,7 +956,7 @@ nav .nav-links a:hover {
   text-align: left;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.5);
   width: 100%;
   height: 100%;
   transition: opacity 250ms ease-in-out;
@@ -965,6 +968,7 @@ nav .nav-links a:hover {
 
 .project-content .hover-text p {
   padding: 10px 20px;
+  color: #f2f2f2;
 }
 
 /* Styling for right side items*/
@@ -978,7 +982,7 @@ nav .nav-links a:hover {
 
 .project-item.right .project-title:before {
   content: "";
-  background-color: var(--main-bg-color); 
+  background-color: #f2f2f2; 
   width: 10px;
   height: 100%;
   position: absolute;
@@ -999,7 +1003,7 @@ nav .nav-links a:hover {
 
 .project-item.left .project-title:before {
   content: "";
-  background-color: var(--main-bg-color);  
+  background-color: #f2f2f2;
   width: 10px;
   height: 100%;
   position: absolute;
@@ -1075,7 +1079,7 @@ nav .nav-links a:hover {
   }
 
   .project-content .hover-text p {
-    color: var(--main-bg-color);
+    color: grey;
     font-size: 14px;
   }
 }
