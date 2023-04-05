@@ -35,7 +35,6 @@ function showSection(sectionId, event) {
 
 
 // Parallax scroll for projects timeline items
-// const projectTitles = document.querySelectorAll('.project-title');
 const projectTitles = document.querySelectorAll('.project-content');
 let lastScrollY = 0;
 let debounce = false;

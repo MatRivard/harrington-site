@@ -1013,12 +1013,8 @@ nav .nav-links a:hover {
 
 .project-title span {
   display: block;
-  position: relative;
-}
-
-.project-title a {
   font-size: 18px;
-  text-decoration: none;
+  position: relative;
 }
 
 .project-title .title-txt {
