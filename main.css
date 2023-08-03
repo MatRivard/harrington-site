@@ -674,6 +674,16 @@ nav .nav-links a:hover {
   margin: 5px;
 }
 
+.subtopic .papers-title {
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+
+/* .subtopic .papers {
+  display: flex;
+  flex-direction: column;
+} */
+
 .subtopic .papers a {
   text-decoration: none;
   border: solid 1px;
@@ -681,6 +691,8 @@ nav .nav-links a:hover {
   padding: 4px;
   background-color: white;
   transition: background-color, color 300ms ease-in-out;
+  margin: 5px 5px 5px 0;
+  display: inline-block;
 }
 
 .subtopic .papers a:hover {
