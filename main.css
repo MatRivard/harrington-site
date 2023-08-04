@@ -887,12 +887,12 @@ nav .nav-links a:hover {
 
 /* SOCIAL PAGE STYLES */
 .projects {
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
 
 .projects h2 {
   text-align: center;
-  margin: 50px 0;
+  margin: 100px 0;
 }
 
 .project-list {
@@ -910,10 +910,17 @@ nav .nav-links a:hover {
 }
 
 .project-item {
-  padding: 50px 0;
+  padding: 50px 20px;
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.project-description {
+  width: 40%;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .project-title {
@@ -929,51 +936,43 @@ nav .nav-links a:hover {
 }
 
 .project-content {
-  width: 55%;
+  width: 48%;
   text-align: center;
   transition: transform 150ms linear;
   transform: translateY(20px);
-}
-
-.project-content .content-inner {
-  width: 600px;
-  height: 345px;
-  cursor: pointer;
-  margin: auto;
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  transition: background-size 200ms ease-in;
-}
-
-.project-content .content-inner:hover {
-  background-size: 105%;
-}
-
-.project-content .hover-text {
-  opacity: 0;
   display: flex;
-  text-align: left;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0,0,0,0.5);
-  width: 100%;
-  height: 100%;
-  transition: opacity 250ms ease-in-out;
+  flex-wrap: wrap;
 }
 
-.project-content .content-inner:hover .hover-text {
-  opacity: 1
+.project-content .content-img {
+  width: 45%;
+  height: 250px;
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
 }
 
-.project-content .hover-text p {
-  padding: 10px 20px;
-  color: #f2f2f2;
+.project-content .content-img:only-child {
+  width: 80%;
+  height: auto;
 }
 
-/* Styling for right side items*/
-.project-item.right {
-  justify-content: flex-start;
+.project-content .content-img:nth-child(even) {
+  transform: translate(5px, 20px);
+}
+
+.project-content .content-img:nth-child(3) {
+  transform: translateX(10px);
+}
+
+.project-item.right .project-content {
+  order: 1;
+}
+
+.project-item.right .project-description {
+  order: 3;
 }
 
 .project-item.right .project-title {
@@ -988,12 +987,6 @@ nav .nav-links a:hover {
   position: absolute;
   left: 0.8vw;
   top: 0;
-}
-
-
-/* Styling for left side items*/
-.project-item.left {
-  justify-content: flex-end;
 }
 
 .project-item.left .project-title {
@@ -1019,17 +1012,6 @@ nav .nav-links a:hover {
 
 .project-title .title-txt {
   font-size: 30px;
-}
-
-.img-mobile {
-  display: none;
-}
-
-@media screen and (max-width: 1300px) {
-  .project-content .content-inner {
-    width: 400px;
-    height: 230px;
-  }
 }
 
 @media screen and (max-width: 900px) {
